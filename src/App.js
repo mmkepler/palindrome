@@ -1,9 +1,13 @@
-import {Main} from "./StyledComponents";
+import { Main, Title, InputDiv, TextInput, Check, Clear, Message } from "./StyledComponents";
 
 function App() {
   return (
     <Main>
-      <h1>Palindrome</h1>
+      <Title>Palindrome</Title>
+      <InputDiv>
+      <TextInput/>
+      <Check />
+      </InputDiv>
     </Main>
   );
 }
