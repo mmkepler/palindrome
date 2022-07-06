@@ -17,7 +17,6 @@ const Check = styled.button``;
 
 const Clear = styled.button``;
 
-const Message = styled.h2``;
 
 
-export { Main, Title, InputDiv, TextInput, Check, Clear, Message }
+export { Main, Title, InputDiv, TextInput, Check, Clear }
