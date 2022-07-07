@@ -23,7 +23,7 @@ function App() {
     let normalString = str.toLowerCase().replace(/\s/g, '');
     //could have used a for loop for this, chose the shorter code
     let reverseString = normalString.split("").reverse().join("");
-    console.log(normalString, reverseString);
+    //console.log(normalString, reverseString);
     if(normalString === reverseString){
       setSuccess(true);
     } else {
@@ -57,7 +57,7 @@ function App() {
           id="input"
           placeholder="Enter a string 2-20 characters"
           minLength="2"
-          max-lenth="20"
+          maxLength="20"
           required
           />
         <br></br>
