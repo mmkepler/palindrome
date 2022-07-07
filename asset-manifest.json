@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/palindrome/static/css/main.ed813e8f.css",
+    "main.js": "/palindrome/static/js/main.629d54d7.js",
+    "static/js/787.73a8bc35.chunk.js": "/palindrome/static/js/787.73a8bc35.chunk.js",
+    "index.html": "/palindrome/index.html",
+    "main.ed813e8f.css.map": "/palindrome/static/css/main.ed813e8f.css.map",
+    "main.629d54d7.js.map": "/palindrome/static/js/main.629d54d7.js.map",
+    "787.73a8bc35.chunk.js.map": "/palindrome/static/js/787.73a8bc35.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed813e8f.css",
+    "static/js/main.629d54d7.js"
+  ]
+}
