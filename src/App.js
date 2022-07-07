@@ -38,16 +38,17 @@ function App() {
       {success ? <><h2>It's a match</h2><br></br><Clear onClick={() => clearInput()}>Try Again</Clear></> : ""}
       { (failure === true || success === true) ?  "" : 
       (<InputDiv>
-        <label htmlFor="input">
-          Enter a string
+        
           <br></br>
           <TextInput 
           type="text" 
           name="input" 
           value={state.input} 
           onChange={(e) => inputHandler(e)} 
-          id="input"/>
-        </label>
+          id="input"
+          placeholder="Enter a string"
+          />
+       
         <br></br>
         <Check name="check" 
         onClick={() => palindromeCheck(state.input)} >check</Check >
