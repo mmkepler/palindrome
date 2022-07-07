@@ -17,7 +17,8 @@ function App() {
   };
 
   //check input short function
-  const palindromeCheck = (str) => {
+  const palindromeCheck = (e,str) => {
+    e.preventDefault();
     //remove spaces
     let normalString = str.toLowerCase().replace(/\s/g, '');
     //could have used a for loop for this, chose the shorter code
@@ -41,26 +42,30 @@ function App() {
     <Main>
       <Title>Palindrome Checker</Title>
       
-      {failure  ? <><h2>Not a Match!</h2><br></br><Clear onClick={() => clearInput()}>Try Again</Clear></> : ""}
-      {success ? <><h2>Match!</h2><br></br><Clear onClick={() => clearInput()}>Try Again</Clear></> : ""}
+      {failure  ? <><h2>{state.input} isn't a Match!</h2><br></br><Clear onClick={() => clearInput()}>Try Again</Clear></> : ""}
+      {success ? <><h2>{state.input} is a Match!</h2><br></br><Clear onClick={() => clearInput()}>Try Again</Clear></> : ""}
       { (failure === true || success === true) ?  "" : 
       (<InputDiv>
         
           <br></br>
+          <form onSubmit={(e) => palindromeCheck(e, state.input)}>
           <TextInput 
           type="text" 
           name="input" 
           value={state.input} 
           onChange={(e) => inputHandler(e)} 
           id="input"
-          placeholder="Enter a string"
+          placeholder="Enter a string 2-20 characters"
+          minLength="2"
+          max-lenth="20"
           required
           />
-       
         <br></br>
-        <Check name="check" 
-        onClick={() => palindromeCheck(state.input)} >check</Check >
+        <Check
+        type="submit">check</Check >
+      </form>
       </InputDiv>)
+      
       }
     </Main>
   );

@@ -27,11 +27,11 @@ const InputDiv = styled.div`
 `;
 
 const TextInput = styled.input `
-  margin: 20px;
+  margin: 20px 0;
   font-size: 1em;
   padding: 4px 8px;
   border-radius: 50px;
-
+  width: 260px;
   box-shadow: 1px 1px 3px #b30059, -1px -1px 3px #b30059;
   border: 1px #b30059 solid;
   text-align: center;
