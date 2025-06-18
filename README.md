@@ -1,6 +1,6 @@
 # Palindrome checker interview prep
 
-## Project seen [here](https://missarachnid.github.io/palindrome/):
+## Project seen [here](https://mmkepler.github.io/palindrome/):
 
 ## User Stories:
 *  A user can enter a string into an input between 2 and 20 characters
